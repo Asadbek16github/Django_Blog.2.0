@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="signup_div">
+        <form method="post">{% csrf_token %}
+            {% form.as_p %}
+            <button class="signup_btn" type="submit">Yuborish</button>
+        </form>
+    </div>
+{% endblock content %}

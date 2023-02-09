@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="login_div">
+        <h2>Akkauntga kirish</h2>
+        <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" >Yuborish</button>
+        </form>
+    </div>
+{% endblock content %}
