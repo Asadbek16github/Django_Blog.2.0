@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 
 {% block title %} Tizimga kirish {% endblock title %}
 {% block content %}
-    <div class="login_div">
+    <div class="login|crispy">
         <h2>Akkauntga kirish</h2>
         <form method="post">{% csrf_token %}
-            {{ form.as_p }}
+            {{ form|crispy }}
             <button type="submit" >Yuborish</button>
         </form>
     </div>
