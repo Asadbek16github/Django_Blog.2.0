@@ -2,13 +2,7 @@
 
 {% block title %}Asosiy sahifa{% endblock title %}
 {% block content %}
-    {% if user.is_authenticated %}
-        <div class="in_site">
-            <span>Xush kelibsiz: {{ user.username }}</span> // <a href="{% url 'logout' %}">Chiqish</a>
-        </div>
-    {% else %}
-        <div class="out_site">
-            <a href="{% url 'signup' %}">Ro'yxatdan o'tish</a> // <a href="{% url 'login' %}">Kirish</a>
-        </div>
-    {% endif %}
+    <div class="home_page">
+        <h2 class="title_page">Xush kelibsiz Mrpytass_16 blogiga</h2>
+    </div>
 {% endblock content %}

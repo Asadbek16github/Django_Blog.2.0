@@ -4,10 +4,10 @@
 {% block title %} Tizimga kirish {% endblock title %}
 {% block content %}
     <div class="login|crispy">
-        <h2>Akkauntga kirish</h2>
+        <h2 class="title_page">Akkauntga kirish</h2>
         <form method="post">{% csrf_token %}
             {{ form|crispy }}
-            <button type="submit" >Yuborish</button>
+            <button type="submit" class="btn btn-success btn_login">Yuborish</button>
         </form>
     </div>
 {% endblock content %}

@@ -12,6 +12,10 @@
                 padding: 10px 100px;
             }
 
+            body{
+                background-color:goldenrod;
+            }
+
             .title_nav{
                 font-size: 35px;
                 letter-spacing: 2px;
@@ -21,6 +25,22 @@
             }
             .title_nav:hover{
                 color: white
+            }
+
+            .commit_templete{
+                padding: 50px 200px;
+            }
+
+            .signup_btn,
+            .btn_login{
+                margin-top: 50px;
+            }
+
+            .title_page{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 300;
+                margin: 20px;
             }
         </style>
     </head>
@@ -49,8 +69,10 @@
             {% endif %}
           </nav>
 
-        {% block content %}
-        {% endblock content %}
+        <div class="commit_templete">
+            {% block content %}
+            {% endblock content %}
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
