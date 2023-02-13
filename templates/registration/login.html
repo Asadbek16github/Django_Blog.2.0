@@ -3,11 +3,13 @@
 
 {% block title %} Tizimga kirish {% endblock title %}
 {% block content %}
-    <div class="login|crispy">
+    <div class="login_page">
         <h2 class="title_page">Akkauntga kirish</h2>
+        <hr class="horizontal_rule">
         <form method="post">{% csrf_token %}
             {{ form|crispy }}
-            <button type="submit" class="btn btn-success btn_login">Yuborish</button>
+            <button type="submit" class="btn btn-secondary btn_login">Yuborish</button>
+            <a href="{% url 'password_reset' %}" class="btn btn-primary">Parolni tiklash</a>
         </form>
     </div>
 {% endblock content %}

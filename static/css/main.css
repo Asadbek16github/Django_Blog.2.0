@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color:goldenrod;
+  background-color:greenyellow;
 }
 
 .title_nav{
@@ -29,6 +29,71 @@ body{
 .title_page{
     text-align: center;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 20px;
 }
+
+
+
+
+.btn_btn{
+    margin: 20px;
+}
+
+/* Boshi: Login page */
+
+.login_page{
+    padding: 50px 100px;
+}
+
+.login_page a{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+/* Oxiri: Login page */
+
+
+/*  Boshi: password change form and password_change_done and password_reset_complete*/
+.password_change_form,
+.password_change_done,
+.password_reset_complete{
+    padding: 20px 100px;
+}
+
+.password_change_form input{
+    display: block;
+    width: 100%;
+    margin: 5px;
+    outline: none;
+    font-size: 13px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.password_change_done a,
+.password_reset_complete a{
+    text-decoration: none;
+}
+
+.password_reset_complete p{
+    text-align: center;
+}
+
+/* Oxiri:  password change form and password_change_done and password_reset_complete*/
+
+
+/* boshi: password_reset_form va password_reset_done*/
+
+.password_reset_form,
+.password_reset_done{
+    padding: 50px 100px;
+}
+
+.password_reset_form p,
+.password_reset_done p{
+    text-align: center;
+}
+
+/* Oxiri: password_reset_form va password_reset_done*/
