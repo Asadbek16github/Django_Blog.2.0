@@ -2,7 +2,15 @@
 
 {% block title %}Asosiy sahifa{% endblock title %}
 {% block content %}
-    <div class="home_page">
-        <h2 class="title_page">Xush kelibsiz Mrpytass_16 blogiga</h2>
-    </div>
+    {% if user.is_authenticated %}
+        <div class="home_page">
+            <h2 class="title_page">Asosiy Sahifa</h2>
+        </div>
+
+    {% else %}
+        <div class="out_home_page">
+            <h2 class="title_page"> Xush kelibsiz Mrpytass_16 blogiga. </h2>
+            <h2 class="title_page"> Mrpytass_16 blogi nima haqida ? </h2>
+        </div>
+    {% endif %}
 {% endblock content %}

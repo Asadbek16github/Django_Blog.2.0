@@ -1,0 +1,34 @@
+.container-fluid{
+    padding: 10px 100px;
+}
+
+body{
+    background-color:goldenrod;
+}
+
+.title_nav{
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+.title_nav:hover{
+    color: white
+}
+
+.commit_templete{
+    padding: 50px 200px;
+}
+
+.signup_btn,
+.btn_login{
+    margin-top: 50px;
+}
+
+.title_page{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 20px;
+}
