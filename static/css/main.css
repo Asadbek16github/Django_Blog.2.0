@@ -34,6 +34,15 @@ body{
 }
 
 
+/* Boshi: navbar */
+.nav_extra{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+/* Oxiri: navbar */
+
 
 
 .btn_btn{
@@ -104,5 +113,32 @@ body{
 .detailDiv{
     background-color: #fff;
     text-align: center;
+    padding: 30px;
+}
+
+.detailDiv_image img{
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.rule{
+    color: black;
+    margin: 20px;
+}
+
+.objectInfo h5{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.textPart p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.detailLinks a{
+    text-decoration: none;
+    margin: 20px;
 }
 /* Oxiri: detailDiv */

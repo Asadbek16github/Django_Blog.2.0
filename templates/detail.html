@@ -6,9 +6,11 @@
     <div class="detailDiv">
         {% if object.Rasm %}
             <div class="detailDiv_image">
-                <img src="{{ object.Rasm.url }}" alt="" width="500px">
+                <img src="{{ object.Rasm.url }}" alt="" width="600px">
             </div>
+            <hr class="rule">
         {% endif %}
+
         <div class="objectInfo">
             <h5>
                 <span>
@@ -27,13 +29,14 @@
                 {{ object.Vaqt }}
             </h5>
         </div>
+        <hr class="rule">
         <div class="textPart">
-            <h2>{{ object.Sarlovha }}</h2>
+            <h2 class="title_page">{{ object.Sarlovha }}</h2>
             <p>{{object.Matn}}</p>
         </div>
         <div class="detailLinks">
-            <a href="{% url 'updateObject' object.pk %}">Postni tahrirlash</a>
-            <a href="{% url 'deleteObject' object.pk %}">Postni o'chirish</a>
+            <a href="{% url 'updateObject' object.pk %}" class="btn btn-primary">Postni tahrirlash</a>
+            <a href="{% url 'deleteObject' object.pk %}" class="btn btn-secondary">Postni o'chirish</a>
         </div>
     </div>
 {% endblock content %}
