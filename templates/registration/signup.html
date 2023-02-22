@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
-{% load crispy_forms_tags %}
+<!-- {% load crispy_forms_tags %} -->
 
 {% block title %} Ro'yxatdan o'tish {% endblock title %}
 {% block content %}
     <div class="signup_div">
         <h2 class="title_page">Ro'yxatdan o'tish</h2>
         <form method="post">{% csrf_token %}
-            {{ form|crispy }}
+            {{ form }}
             <button class="signup_btn btn btn-primary" type="submit">Yuborish</button>
         </form>
     </div>

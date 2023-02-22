@@ -97,3 +97,12 @@ body{
 }
 
 /* Oxiri: password_reset_form va password_reset_done*/
+
+
+
+/* Boshi: detailDiv */
+.detailDiv{
+    background-color: #fff;
+    text-align: center;
+}
+/* Oxiri: detailDiv */

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}{{object.Sarlovha}}{% endblock title %}
+
+{% block content %}
+    <div class="detailDiv">
+        {% if object.Rasm %}
+            <div class="detailDiv_image">
+                <img src="{{ object.Rasm.url }}" alt="" width="500px">
+            </div>
+        {% endif %}
+        <div class="objectInfo">
+            <h5>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                    </svg>
+                </span>
+                {{ object.Mualliff }}
+            </h5>
+            <h5>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zM2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                </span>
+                {{ object.Vaqt }}
+            </h5>
+        </div>
+        <div class="textPart">
+            <h2>{{ object.Sarlovha }}</h2>
+            <p>{{object.Matn}}</p>
+        </div>
+        <div class="detailLinks">
+            <a href="#">Postni tahrirlash</a>
+            <a href="#">Postni o'chirish</a>
+        </div>
+    </div>
+{% endblock content %}
