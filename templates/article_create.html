@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Maqola qo'shish{% endblock title %}
+
+{% block content %}
+    <div class="article_create">
+        <h2>Maqola qo'shish</h2>
+        <form method="post">{% csrf_token %}
+            {{form}}
+            <button type="submit">Yuborish</button>
+        </form>
+    </div>
+{% endblock content %}

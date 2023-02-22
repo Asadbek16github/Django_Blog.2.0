@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock title %}
+
+{% block content %}
+    <div class="article_delete">
+        <form method="post">{% csrf_token %}
+            <h2>" {{object.Sarlovha}} " Haqiqatdan ham Shu maqolani o'chirmoqchimisiz !</h2>
+            <button type="submit" >Yuborish</button>
+        </form>
+    </div>
+{% endblock content %}

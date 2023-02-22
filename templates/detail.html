@@ -32,8 +32,8 @@
             <p>{{object.Matn}}</p>
         </div>
         <div class="detailLinks">
-            <a href="#">Postni tahrirlash</a>
-            <a href="#">Postni o'chirish</a>
+            <a href="{% url 'updateObject' object.pk %}">Postni tahrirlash</a>
+            <a href="{% url 'deleteObject' object.pk %}">Postni o'chirish</a>
         </div>
     </div>
 {% endblock content %}

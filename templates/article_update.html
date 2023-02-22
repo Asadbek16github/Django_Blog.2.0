@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Postni tahrirlash{% endblock title %}
+
+{% block content %}
+    <div class="updateArticle">
+        <h2>Malumotlarni tahrirlash oynasi</h2>
+        <form method="post">{% csrf_token %}
+            {{form}}
+            <button type="submit" >Yuburish</button>
+        </form>
+    </div>
+{% endblock content %}
