@@ -33,6 +33,9 @@ body{
     margin: 20px;
 }
 
+.btn_btn{
+    margin: 20px;
+}
 
 /* Boshi: navbar */
 .nav_extra{
@@ -45,9 +48,7 @@ body{
 
 
 
-.btn_btn{
-    margin: 20px;
-}
+
 
 /* Boshi: Login page */
 
@@ -142,3 +143,30 @@ body{
     margin: 20px;
 }
 /* Oxiri: detailDiv */
+
+
+
+
+/* Boshi: Article Update page */
+.updateArticle{
+    background-color: #fff;
+    padding: 20px 50px;
+}
+
+.updateArticle input,
+.updateArticle textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    margin: 10px 20px;
+
+}
+
+.update_btn{
+    position: fixed;
+    top: 100px;
+    left: 20px;
+}
+/* Oxiri: Atricle Update Page */

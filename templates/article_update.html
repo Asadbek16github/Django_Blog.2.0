@@ -4,10 +4,11 @@
 
 {% block content %}
     <div class="updateArticle">
-        <h2>Malumotlarni tahrirlash oynasi</h2>
+        <h2 class="title_page">Malumotlarni tahrirlash oynasi</h2>
         <form method="post">{% csrf_token %}
             {{form}}
-            <button type="submit" >Yuburish</button>
+            <button type="submit" class="btn_btn btn btn-primary">Yuburish</button>
         </form>
+        <a href="{% url 'articleDetail' object.pk %}" class="update_btn btn btn-secondary" >Maqolaga qaytish</a>
     </div>
 {% endblock content %}
