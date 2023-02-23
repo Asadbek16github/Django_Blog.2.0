@@ -114,7 +114,8 @@ body{
 .detailDiv{
     background-color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 40px 50px;
+    border-radius: 10px;
 }
 
 .detailDiv_image img{
@@ -170,3 +171,12 @@ body{
     left: 20px;
 }
 /* Oxiri: Atricle Update Page */
+
+
+/* Boshi: Article Delete page */
+.article_delete{
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+}
