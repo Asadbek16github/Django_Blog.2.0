@@ -13,6 +13,7 @@ body{
     color: white;
     text-decoration: none;
 }
+
 .title_nav:hover{
     color: white
 }
@@ -35,6 +36,7 @@ body{
 
 .btn_btn{
     margin: 20px;
+    display: block;
 }
 
 /* Boshi: navbar */
@@ -48,6 +50,9 @@ body{
 
 
 
+.card_maqola{
+    margin-bottom: 20px;
+}
 
 
 /* Boshi: Login page */
@@ -174,9 +179,13 @@ body{
 
 
 /* Boshi: Article Delete page */
+
 .article_delete{
     text-align: center;
     background-color: #fff;
     padding: 40px 50px;
     border-radius: 10px;
 }
+
+/* Oxiri: Article Delete page */
+

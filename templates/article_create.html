@@ -3,11 +3,11 @@
 {% block title %}Maqola qo'shish{% endblock title %}
 
 {% block content %}
-    <div class="article_create">
-        <h2>Maqola qo'shish</h2>
-        <form method="post">{% csrf_token %}
+    <div class="article_create" >
+        <h2 class="title_page">Maqola qo'shish</h2>
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
             {{form}}
-            <button type="submit">Yuborish</button>
+            <button type="submit" class="btn btn-primary btn_btn">Yuborish</button>
         </form>
     </div>
 {% endblock content %}
